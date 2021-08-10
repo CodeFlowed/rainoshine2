@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>RainOShine</title>
+</head>
+<body>
+    <main>
+        <h1 class="title">RainOShine</h1>
+        <p class="location">Waipahu, HI</p><!--Todo: Make form input here to customize weather location  -->
+
+        <section class="forecast-today">
+            <div class="media-object">
+                <div class="media-object__section mos-header"> <!-- mos short for Media Object Section -->
+                    <h2 class="day-now" id="day-now">Now</h2>
+                </div>
+
+                <div class="media-object__section mos-icon-now">
+                    <div class="thumbnail" id="thumbnail-now">
+                        ☁️ <!-- Todo: make this update appropriately with current weather conditions -->
+                    </div>
+                </div>
+
+                <div class="media-object__section mos-temp-now">
+                    <p class="temp-now">
+                        <span id="temp__now"></span>
+                    </p>
+                </div>
+
+                <div class="media-object__section mos-range-today">
+                    <p class="temp-today">
+                        <span id="temp__today-high"></span>°<br>
+                        <span id="temp__today-low"></span>°
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-tomorrow">
+            <div class="media-object">
+                <div class="media-object__section mos-header">
+                    <h2 class="day-tomorrow" id="day-tomorrow">Tomorrow</h2>
+                </div>
+
+                <div class="media-object__section mos-icon-tomorrow">
+                    <div class="thumbnail" id="thumbnail-tomorrow">
+                        ☁️ <!-- Todo: make this update appropriately with current weather conditions -->
+                    </div>
+                </div>
+
+                <!-- <div class="media-object__section mos-temp-tomorrow">
+                    <p class="temp-tomorrow">
+                        <span id="temp__tomorrow"></span>
+                    </p>
+                </div> -->
+
+                <div class="media-object__section mos-range-tomorrow">
+                    <p class="temp-tomorrow">
+                        <span id="temp__tomorrow-high"></span>–<span id="temp__tomorrow-low"></span>°
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
